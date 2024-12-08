@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const page = () => {
+ const category = () => {
   return (
     <div className='w-screen h-full grid grid-cols-3'>
 
@@ -256,4 +256,4 @@ h-[40px]'>Apply Filter</button>          </div>
   )
 }
 
-export default page
+export default category
