@@ -24,7 +24,8 @@ top-88
     <Link className='px-4 hover:underline hover:underline-offset-4' href="/new-arrivals"> New Arrivals </Link>
     <Link className='mr-16 hover:underline hover:underline-offset-4' href="/brands"> Brands </Link>
     <Link className='mr-16 hover:underline hover:underline-offset-4' href="/productdetail"> Product Detail </Link>
-    
+    <Link className='mr-16 hover:underline hover:underline-offset-4' href="/category"> Category </Link>
+
     </div>
 
     {/* search & cart container */}
