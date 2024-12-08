@@ -7,24 +7,24 @@ const home = () => {
 <div>
 
       {/* hero section */}
-        <div className='w-auto h-auto items-center px-2 '>
+        <div className='lg:w-auto sm:w-[400px]   lg:h-auto items-center px-2 '>
         <Image src="/home/heroPic.png" alt="hero section" width={1390} height={80} />
         </div>
 
 <section id="newarival" className='sm:flex sm:flex-col'>
       
-        <h1 className='font-extrabold text-3xl text-center py-10 sm:py-3
+        <h1 className='font-extrabold lg:text-3xl sm:text-xl text-center py-10 sm:py-3 sm:-ml-40
 
       
         '>NEW ARRIVELS</h1>
         {/* realted items */}
-              <div className=' flex flex-row  justify-evenly 
-                              sm:flex sm:flex-col sm:mx-44
+              <div className=' lg:flex lg:flex-row  justify-evenly 
+                              sm:flex sm:flex-col sm:mx-28
               '>
           
            {/* card1 */}
           
-            <div className='flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px]  sm:h-[420px]'>
+            <div className='flex flex-col flex-start p-0 gap-[16px]  w-[270px] lg:h-[650px]  sm:h-[420px]'>
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/home/shirt1.png" alt="shirt1" width={180} height={180} 
               className=' position-absolute w-[190px] h-[180px] -mt-10'/>
@@ -43,7 +43,7 @@ const home = () => {
  {/* card 2 */}
 
           
-            <div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px] sm:h-[420px]'>
+            <div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] lg:h-[650px] sm:h-[420px]'>
             
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/home/p2.png" alt="skinny fit jeans" width={180} height={180} 
@@ -62,7 +62,7 @@ const home = () => {
           
 {/* card 3 */}
 
-              <div className=' flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px] sm:h-[420px] '>
+              <div className=' flex flex-col flex-start p-0 gap-[16px] w-[270px] lg:h-[650px] sm:h-[420px] '>
                 
                 <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/home/p3.png" alt="checkered shirt" width={180} height={180} 
@@ -96,7 +96,7 @@ const home = () => {
                </div>
             </div>
        <div className='ml-[35em] -mt-[15em]'>
-       <button  className='outline outline-2 outline-blace w-36 h-10 rounded-full sm:-ml-80'> View All </button>
+       <button  className='outline outline-2 outline-blace w-36 h-10 rounded-full sm:-ml-96'> View All </button>
        </div>
 </section>     
        <hr className='mt-10 mb-10'/>
@@ -107,16 +107,16 @@ const home = () => {
 <section id="top selling">
 
       <div>
-      <h1 className=' text-[3em] text-center font-extrabold'>TOP SELLING</h1>
+      <h1 className=' lg:text-[3em] sm:text-2xl sm:-ml-28 text-center font-extrabold'>TOP SELLING</h1>
       </div>
 
 
-      <div className=' flex flex-row sm:flex-col  sm:ml-[185px] justify-evenly '>
+      <div className=' flex lg:flex-row sm:flex-col  sm:ml-[125px] justify-evenly '>
           
          {/* card 1 */}
 
           
-         <div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px] '>
+         <div className=' flex flex-col flex-start p-0 gap-[16px]   lg:w-[270px] sm:w-[200px] h-[650px] '>
             
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/home/p5.png" alt="Vertical Striped Shirt" width={180} height={180} 
@@ -149,11 +149,11 @@ const home = () => {
            <p className='text-2xl ml-11'>$180 </p>
 
              </div>
-             <div className=' flex flex-row justify-evenly '>
+             <div className=' flex flex-col justify-evenly '>
           
           {/* card3 */}
          
-           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px] mr-10'>
+           <div className='flex flex-col  p-0 gap-[16px] w-[270px] h-[650px] '>
            <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
              <Image src="/home/p7.png" alt="Loos Fit Bermuda Short" width={180} height={180} 
              className=' position-absolute w-[190px] h-[180px] -mt-10'/>
@@ -170,7 +170,7 @@ const home = () => {
           
           {/* card4 */}
          
-           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px]'>
+           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px] sm:-ml-40'>
            <div className='w-[250px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
              <Image src="/home/p8.png" alt="Faded Skinny Jeans" width={180} height={180} 
              className=' position-absolute w-[180px] h-[180px] -mt-10'/>
@@ -191,23 +191,23 @@ const home = () => {
 </section>
 
 {/* Browse by dress style */}
-<section className='bg-gray-300 rounded-xl w-[900px] h-[266px] ml-44 mb-32 pb-28'>
-<div className='text-center font-extrabold text-[3em]'>BROWSE BY DRESS STYLE</div>
-<div className=' w-80  h-90 grid grid-cols-2   ml-80 pb-24' >
+<section className='bg-gray-300 rounded-xl lg:w-[900px] sm:w-80 lg:h-[266px] lg:ml-44 lg:mb-32 lg:pb-28 sm:grid '>
+<div className='lg:text-center lg:font-extrabold lg:text-[3em] sm:text-[32px] sm:-mt-16'>BROWSE BY DRESS STYLE</div>
+<div className=' lg:w-80 sm:w-[150px]  lg:h-90 lg:grid lg:grid-cols-2 sm:flex sm:flex-col  lg:ml-80 sm:ml-1 lg:pb-24' >
 <Image src="/home/dress style/casual.png" alt='casual' width={407} height={489}
 className='rounded-2xl '/>
 <Image src="/home/dress style/formal.png" alt='formal' width={684} height={489}
 className=' rounded-xl '/>
 <Image src="/home/dress style/party.png" alt='party' width={684} height={489}
-className=' rounded-xl mr-9 mt-3 '/>
+className=' rounded-xl lg:mr-9 lg:mt-3 sm:mt-2'/>
 <Image src="/home/dress style/gym.png" alt='gym' width={407} height={489}
-className=' rounded-xl -mt-9 ml-3'/>
+className=' rounded-xl lg:-mt-9 lg:ml-3 sm:mt-5'/>
 </div>
 </section>
 
 <div>
-<h1 className='text-3xl font-extrabold'>OUR HAPPY CUSTOMERS</h1>
-<div className='flex flex-row px-14 gap-20 py-9'>
+<h1 className='lg:text-3xl sm:text-[18px] lg:font-extrabold'>OUR HAPPY CUSTOMERS</h1>
+<div className='lg:flex flex-row sm:flex-col px-14 lg:gap-20 lg:py-9'>
 <div> <Image src="/comit/comt1.png" alt='comt1' width={284} height={189}/>
 </div>
 <div> <Image src="/comit/comt2.png" alt='comt2' width={284} height={189}/>
