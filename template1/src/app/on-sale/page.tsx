@@ -3,7 +3,7 @@ import Link from 'next/link'
 const onsale = () => {
   return (
     <div>
-      <Link href="/category" > category </Link>
+      <Link href="/" ></Link>
     </div>
   )
 }

@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div className=' 
   position-absolute;
- flex
- justify-center
-md:w-screen   sm:w-auto        
+ flex           sm:flex
+ justify-center 
+md:w-screen     sm:w-auto        
 md:h-[440px]    sm:h-auto
                   sm:py-8
 left-[0px]
@@ -20,18 +20,19 @@ text-black
 
 { /* sub container */}
 <div className='  
-md:flex      sm:grid 
-md:flex-row   sm:grid-flow-col
-md:justify-center
+md:flex      sm:grid
+md:flex-row  sm grid-cols-3
+              sm:grid-rows-3
+md:justify-center sm:justify-center
 flex-start
 p-0
-gap-[87px]             
-md:pt-[7em]  sm:pt-7    
+gap-[87px]   sm:gap-5         
+md:pt-[7em]  sm:pt-1    
 
 position-absolute       
 md:w-[1170px]   sm:w-screen
-md:h-[236px]    sm:h-full  
-md:left-[135px]            sm: ml-20 
+md:h-[236px]    sm:h-full 
+md:left-[135px] sm: ml-10 
 top-[80px]              
 '>
 
@@ -40,8 +41,8 @@ top-[80px]
  flex
  flex-col
  items-start
- md:p-0 sm:pb-6
- gap-[16px]
+ md:p-0 sm:pb-2
+ gap-[16px]   
 
 w-[217px]
 h-[188px]
@@ -57,7 +58,7 @@ p-0
 pt-2        
 gap-[24px]
 
-md:w-[168px]    sm:w-[30px]
+md:w-[168px]    sm:w-[20px]
 h-[50px]
 
 '>
@@ -74,9 +75,9 @@ flex
 flex-col
 flex-start
 p-0                   
-gap-[24px] 
+gap-[24px] sm:ml-3  sm:gap-3
 
-w-[175px]
+w-[175px] sm:w-4
 h-{180px}
 '>
   <h1 className='font-bold'> Company</h1>
@@ -91,7 +92,7 @@ flex
 flex-col
 flex-start
 p-0
-gap-[24px]   
+gap-[24px]    sm:gap-2
 md:w-[123px]    sm:w-[50px]
 md:h-[236px]    sm:h-[90px]
 '>
@@ -109,7 +110,7 @@ flex
 flex-col
 flex-start
 p:0            
-gap-[16px]      
+gap-[16px]      sm:-mt-16
 
  md:w-[109px]    sm:w-[40]
  md:h-[144px]    sm:h-[50]
@@ -125,24 +126,24 @@ gap-[16px]
 {/* frame5 open*/}
 <div>
   <div className='
-flex
-flex-col
+flex        sm:grid
+flex-col    sm: grid-cols
 flex-start
 p-0   
 gap-[24px]
 
-md:w-[198px]      sm:w-[50px]
+md:w-[198px]     sm:w-[50px]
 md:h-[162px]     sm:h-[60px]
 '>
   <div className='
-flex
-flex-col
+flex  
+flex-col  
 flex-start;
 p-0                 
-md:gap-[15px]          sm:gap-2
+gap-[15px]    sm:-mt-16      
 
-md:w-[198px]      sm:w-[50px]
-md:h-[110px]     sm:h-[60px]
+w-[198px]     sm:w-[50px]
+h-[110px]     sm:h-[60px]
 '>
     <h1 className='font-bold'> Resources</h1>
     <p className='text-[12.8px]'>Free eBooks</p>
@@ -159,10 +160,10 @@ flex
 flex-row
 p-0       
 gap-[24px]
-mt-6
+mt-6            sm:mt-48
 -ml-16
-md:w-[168px]    sm:w-[30px]
-h-[50px] w-`
+w-[168px]       sm:w-[35px]
+h-[50px]        sm:h-[20px]
 
 '>
   <Image src="/footer/Badge.png" alt='vs1' width={42} height={2}/>

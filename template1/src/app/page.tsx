@@ -11,15 +11,20 @@ const home = () => {
         <Image src="/home/heroPic.png" alt="hero section" width={1390} height={80} />
         </div>
 
-<section id="newarival">
+<section id="newarival" className='sm:flex sm:flex-col'>
       
-        <h1 className='font-extrabold text-3xl text-center py-10'>NEW ARRIVELS</h1>
+        <h1 className='font-extrabold text-3xl text-center py-10 sm:py-3
+
+      
+        '>NEW ARRIVELS</h1>
         {/* realted items */}
-              <div className=' flex flex-row justify-evenly '>
+              <div className=' flex flex-row  justify-evenly 
+                              sm:flex sm:flex-col sm:mx-44
+              '>
           
            {/* card1 */}
           
-            <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px]'>
+            <div className='flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px]  sm:h-[420px]'>
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/home/shirt1.png" alt="shirt1" width={180} height={180} 
               className=' position-absolute w-[190px] h-[180px] -mt-10'/>
@@ -38,7 +43,7 @@ const home = () => {
  {/* card 2 */}
 
           
-            <div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px] '>
+            <div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px] sm:h-[420px]'>
             
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/home/p2.png" alt="skinny fit jeans" width={180} height={180} 
@@ -57,7 +62,7 @@ const home = () => {
           
 {/* card 3 */}
 
-              <div className=' flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px] '>
+              <div className=' flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px] sm:h-[420px] '>
                 
                 <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/home/p3.png" alt="checkered shirt" width={180} height={180} 
@@ -91,7 +96,7 @@ const home = () => {
                </div>
             </div>
        <div className='ml-[35em] -mt-[15em]'>
-       <button  className='outline outline-2 outline-blace w-36 h-10 rounded-full'> View All </button>
+       <button  className='outline outline-2 outline-blace w-36 h-10 rounded-full sm:-ml-80'> View All </button>
        </div>
 </section>     
        <hr className='mt-10 mb-10'/>
@@ -106,7 +111,7 @@ const home = () => {
       </div>
 
 
-      <div className=' flex flex-row justify-evenly '>
+      <div className=' flex flex-row sm:flex-col  sm:ml-[185px] justify-evenly '>
           
          {/* card 1 */}
 
