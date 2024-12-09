@@ -7,18 +7,19 @@ const home = () => {
 <div>
 
       {/* hero section */}
-        <div className='lg:w-auto sm:w-[400px]   lg:h-auto items-center px-2 '>
+        <div className='xl:w-screen h-auto lg:w-auto sm:w-[400px]   lg:h-auto items-center px-2 '>
         <Image src="/home/heroPic.png" alt="hero section" width={1390} height={80} />
         </div>
 
 <section id="newarival" className='sm:flex sm:flex-col'>
       
-        <h1 className='font-extrabold lg:text-3xl sm:text-xl text-center py-10 sm:py-3 sm:-ml-40
+        <h1 className='xl:font-extrabold xl:text-4xl lg:text-3xl sm:text-xl xl:text-center xl:py-10 sm:py-3 sm:-ml-40
 
       
         '>NEW ARRIVELS</h1>
         {/* realted items */}
-              <div className=' lg:flex lg:flex-row  justify-evenly 
+              <div className='
+              lg:flex lg:flex-row  justify-evenly 
                               sm:flex sm:flex-col sm:mx-28
               '>
           
@@ -95,8 +96,8 @@ const home = () => {
 
                </div>
             </div>
-       <div className='ml-[35em] -mt-[15em]'>
-       <button  className='outline outline-2 outline-blace w-36 h-10 rounded-full sm:-ml-96'> View All </button>
+       <div className='xl: ml-[1038px]  xl:-mt-[15em]'>
+       <button  className='outline outline-2 outline-blace xl:w-36 xl:h-10 rounded-full  sm:-ml-96'> View All </button>
        </div>
 </section>     
        <hr className='mt-10 mb-10'/>
@@ -107,11 +108,14 @@ const home = () => {
 <section id="top selling">
 
       <div>
-      <h1 className=' lg:text-[3em] sm:text-2xl sm:-ml-28 text-center font-extrabold'>TOP SELLING</h1>
+      <h1 className='xl:py-5 xl:mb-20 xl:text-[4em] lg:text-[3em] 
+      sm:text-2xl sm:-ml-28 text-center font-extrabold'>
+        TOP SELLING</h1>
       </div>
 
 
-      <div className=' flex lg:flex-row sm:flex-col  sm:ml-[125px] justify-evenly '>
+      <div className=' xl: flex lg:flex-row sm:flex-col 
+       sm:ml-[125px] xl:ml-2 justify-evenly '>
           
          {/* card 1 */}
 
@@ -165,12 +169,10 @@ const home = () => {
               <Image src="/home/Three Star.png" alt='three star' width={60} height={9} /> 3.0/5</p>
            <p className='text-2xl ml-11'>$80 </p>
 
-             </div>
-             <div className=' flex flex-row justify-evenly '>
-          
+             
           {/* card4 */}
          
-           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px] sm:-ml-40'>
+           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px] sm:-ml-40 xl:-ml-[800px] '>
            <div className='w-[250px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
              <Image src="/home/p8.png" alt="Faded Skinny Jeans" width={180} height={180} 
              className=' position-absolute w-[180px] h-[180px] -mt-10'/>
@@ -181,19 +183,23 @@ const home = () => {
             <p className='flex flex-row gap-2 px-10'> <Image src="/home/Four Half Star.png" alt='4half star' width={100} height={50} /> 4.5/5</p>
            <p className='text-2xl ml-11'>$210 </p>
 
+           </div>
              </div>
 
- </div>        
+            </div>        
 
-</div>
 </div>
 
 </section>
 
 {/* Browse by dress style */}
-<section className='bg-gray-300 rounded-xl lg:w-[900px] sm:w-80 lg:h-[266px] lg:ml-44 lg:mb-32 lg:pb-28 sm:grid '>
-<div className='lg:text-center lg:font-extrabold lg:text-[3em] sm:text-[32px] sm:-mt-16'>BROWSE BY DRESS STYLE</div>
-<div className=' lg:w-80 sm:w-[150px]  lg:h-90 lg:grid lg:grid-cols-2 sm:flex sm:flex-col  lg:ml-80 sm:ml-1 lg:pb-24' >
+<section className='bg-gray-300 rounded-xl xl:w-[900px] sm:w-80 
+xl:h-[266px] 
+lg:ml-44 lg:mb-32 lg:pb-28 xl:mt-72 sm:grid '>
+<div className='lg:text-center lg:font-extrabold lg:text-[3em] sm:text-[32px]
+ sm:-mt-16'>BROWSE BY DRESS STYLE</div>
+<div className=' xl:w-80 sm:w-[150px]  xl:h-90 xl:grid  xl:gap-3
+xl:grid-cols-2 sm:flex sm:flex-col  lg:ml-80 sm:ml-1 lg:pb-24' >
 <Image src="/home/dress style/casual.png" alt='casual' width={407} height={489}
 className='rounded-2xl '/>
 <Image src="/home/dress style/formal.png" alt='formal' width={684} height={489}
@@ -206,8 +212,11 @@ className=' rounded-xl lg:-mt-9 lg:ml-3 sm:mt-5'/>
 </section>
 
 <div>
-<h1 className='lg:text-3xl sm:text-[18px] lg:font-extrabold'>OUR HAPPY CUSTOMERS</h1>
-<div className='lg:flex flex-row sm:flex-col px-14 lg:gap-20 lg:py-9'>
+<h1 className='xl:text-3xl sm:text-[18px] xl:font-extrabold'>
+  
+  
+  OUR HAPPY CUSTOMERS</h1>
+<div className='xl:flex xl:flex-row lg:flex flex-row sm:flex-col px-14 lg:gap-20 lg:py-9'>
 <div> <Image src="/comit/comt1.png" alt='comt1' width={284} height={189}/>
 </div>
 <div> <Image src="/comit/comt2.png" alt='comt2' width={284} height={189}/>

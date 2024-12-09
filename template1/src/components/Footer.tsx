@@ -20,19 +20,19 @@ text-black
 
 { /* sub container */}
 <div className='  
-md:flex      sm:grid
-md:flex-row  sm grid-cols-3
+xl:flex      sm:grid
+xl:flex-row  sm grid-cols-3
               sm:grid-rows-3
-md:justify-center sm:justify-center
+xl:justify-center sm:justify-center
 flex-start
 p-0
-gap-[87px]   sm:gap-5         
-md:pt-[7em]  sm:pt-1    
+xl:gap-[87px]   sm:gap-5         
+xl:pt-[7em]  sm:pt-1    
 
 position-absolute       
-md:w-[1170px]   sm:w-screen
-md:h-[236px]    sm:h-full 
-md:left-[135px] sm: ml-10 
+xl:w-[1170px]   sm:w-screen
+xl:h-[236px]    sm:h-full 
+xl:left-[135px] sm: ml-10 
 top-[80px]              
 '>
 
@@ -43,7 +43,7 @@ top-[80px]
  items-start
  md:p-0 sm:pb-2
  gap-[16px]   
-
+xl:-mt-12
 w-[217px]
 h-[188px]
 '>
@@ -56,10 +56,10 @@ flex-row
 flex-start
 p-0
 pt-2        
-gap-[24px]
+xl:gap-[24px]
 
-md:w-[168px]    sm:w-[20px]
-h-[50px]
+xl:w-[168px]    sm:w-[20px]
+xl:h-[50px]
 
 '>
   <Image src="/footer/1.png" alt='twitter' width={26} height={26}/>
@@ -75,8 +75,9 @@ flex
 flex-col
 flex-start
 p-0                   
-gap-[24px] sm:ml-3  sm:gap-3
-
+xl:gap-[24px] sm:ml-3  sm:gap-3
+xl:-mt-12
+xl:mr-4
 w-[175px] sm:w-4
 h-{180px}
 '>
@@ -92,9 +93,10 @@ flex
 flex-col
 flex-start
 p-0
-gap-[24px]    sm:gap-2
-md:w-[123px]    sm:w-[50px]
-md:h-[236px]    sm:h-[90px]
+xl:-mt-12
+xl:gap-[22px]    sm:gap-2
+xl:w-[123px]    sm:w-[50px]
+xl:h-[236px]    sm:h-[90px]
 '>
 <h1 className='font-bold'>Help</h1>
 <p>Customer Support</p>
@@ -110,10 +112,10 @@ flex
 flex-col
 flex-start
 p:0            
-gap-[16px]      sm:-mt-16
-
- md:w-[109px]    sm:w-[40]
- md:h-[144px]    sm:h-[50]
+xl:gap-[16px]      sm:-mt-16
+xl:-mt-12
+xl:w-[109px]    sm:w-[40]
+ xl:h-[144px]    sm:h-[50]
 '>
 <h1 className='font-bold'>FAQ</h1>
 <p>Account</p>
@@ -126,14 +128,14 @@ gap-[16px]      sm:-mt-16
 {/* frame5 open*/}
 <div>
   <div className='
-flex        sm:grid
-flex-col    sm: grid-cols
+xl:flex        sm:grid
+xl:flex-col    sm: grid-cols
 flex-start
 p-0   
 gap-[24px]
 
-md:w-[198px]     sm:w-[50px]
-md:h-[162px]     sm:h-[60px]
+xl:w-[198px]     sm:w-[50px]
+x;:h-[162px]     sm:h-[60px]
 '>
   <div className='
 flex  
@@ -156,14 +158,14 @@ h-[110px]     sm:h-[60px]
   </div>
   </div>
   <div className='
-flex
-flex-row
+xl:flex
+xl:flex-row
 p-0       
-gap-[24px]
-mt-6            sm:mt-48
--ml-16
-w-[168px]       sm:w-[35px]
-h-[50px]        sm:h-[20px]
+xl:gap-[24px]
+xl:mt-48            sm:mt-48
+xl:-ml-16
+xl:w-[168px]       sm:w-[35px]
+xl:h-[50px]        sm:h-[20px]
 
 '>
   <Image src="/footer/Badge.png" alt='vs1' width={42} height={2}/>

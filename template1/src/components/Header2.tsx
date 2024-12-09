@@ -5,25 +5,26 @@ import Image from 'next/image'
 const Header2 = () => {
   return (
 <div className='
-flex
-flex-row
+lg:flex  xl:flex
+lg:flex-row xl:flex-row
 items-center
 position-absolute
-w-[1170px] sm:w-auto
-h-[55px]     
+xl:w-[1170px]  lg::w-auto sm:w-auto
+lg:h-[55px]     
 left-125
 top-88
+
 '>
         
     {/* logo & routs */}
-    <h1 className='ml-40  font-extrabold text-2xl
-      sm:ml-2 sm:grid 
+    <h1 className='xl:ml-40  font-extrabold xl:text-2xl
+      sm:ml-2 sm:grid  xl:flex
     '> SHOP.CO </h1>
-    <div className='flex justify-between px-4 text-[12px]
+    <div className='xl:flex xl:flex-row xl:justify-between px-4 text-[12px]
                       sm:flex flex-col 
                       '>
     <Link className='px-4 hover:underline hover:underline-offset-4' href="/shop"> Shop </Link>
-    <Link className='hover:underline hover:underline-offset-4' href="/on-sale"> On Sale </Link>
+    <Link className='xl:mr-4 hover:underline hover:underline-offset-4' href="/on-sale"> On Sale </Link>
     <Link className='px-4 hover:underline hover:underline-offset-4 sm:-ml-4' href="/new-arrivals">New Arrivals </Link>
     <Link className='mr-16 hover:underline hover:underline-offset-4' href="/brands"> Brands </Link>
     <Link className='mr-16 hover:underline hover:underline-offset-4' href="/productdetail"> Product Detail </Link>

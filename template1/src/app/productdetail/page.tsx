@@ -10,7 +10,7 @@ const productdetail = () => {
       <div className='py-4 px-24'>
         <p>
          <Link href="/"> Home </Link>  /
-          <Link href="/"> Shop</Link>  /
+          <Link href="/shop"> Shop</Link>  /
           <Link href="/"> Man</Link>  /
           T-Shirt
         </p>
@@ -18,9 +18,11 @@ const productdetail = () => {
 
     
 
-      <div className=' grid grid-flow-col'>
+      <div className=' xl:grid xl:grid-flow-col sm:grid-flow-row'>
         {/* side  images  */}
-        <div className='flex justify-evenly flex-col ml-40  h-80 mt-20 gap-14'>
+        <div className='xl:flex justify-evenly xl:flex-col xl:ml-40  h-80 xl:mt-20 xl:gap-14
+                        sm:flex sm:flex-col sm:ml-28 sm:gap-5
+        '>
           <div className='
 position-absolute
 w-170px
@@ -44,14 +46,14 @@ h-170'>
         {/* main image */}
         <div className='
 position-absolute
-w-[450px]
-h-[650px]
-mt-20'>
+xl:w-[450px] sm:w-72
+xl:h-[650px]
+xl:mt-20  sm:mt-18 sm:ml-12'>
           <Image src="/prod/main.png" alt='main' width={446} height={646} />
         </div>
 
         {/* text details */}
-        <div className='w-75 h-80  mt-20'>
+        <div className='xl:w-80 xl:h-80  xl:mt-20  sm:w-40 sm:ml-8'>
           <h1 className='font-bold text-[20px]'>One Life Graphic T-shirt</h1>
           <div className='flex flex-row'> <Image src="/home/Four Half Star.png" alt='4 H star' width={100} height={100} />
             <span>4.5/5</span> 
@@ -94,29 +96,32 @@ ml-4
           <hr className='w-[400px] mt-3'/>
 
           {/* size button */}
-          <h1 className='font-400 text-[20px] line-height-[20px] text-gray-400 py-2'> Choose Size : </h1>
-          <div className='flex flex-row gap-4 py-2 '>
-            <button className='rounded-full   bg-gray-100 text-gray-400 text-center w-[86px] h-[46px] '>Small</button>
-            <button className='rounded-full   bg-gray-100 text-gray-400 text-center w-[86px] h-[46px] '>Medium</button>
-            <button className='rounded-full   bg-gray-100 text-gray-400 text-center w-[86px] h-[46px] '>Lrage</button>
-            <button className='rounded-full    bg-gray-100 text-gray-400 text-center w-[86px] h-[46px] '> X-Lrage</button>
+          <h1 className='font-400 text-[20px] line-height-[20px] 
+          text-gray-400 py-2'> Choose Size : </h1>
+          <div className='flex xl:flex-row  sm:flex-col gap-4 py-2 '>
+            <button className='rounded-full   bg-gray-100 text-gray-400 text-center w-[86px] h-[46px] sm:mb-2'>Small</button>
+            <button className='rounded-full   bg-gray-100 text-gray-400 text-center w-[86px] h-[46px] sm:mb-2'>Medium</button>
+            <button className='rounded-full   bg-gray-100 text-gray-400 text-center w-[86px] h-[46px] sm:mb-2'>Lrage</button>
+            <button className='rounded-full    bg-gray-100 text-gray-400 text-center w-[86px] h-[46px]  '> X-Lrage</button>
           </div>
 
           <hr className='w-[400px] mt-3'/>
 
-          <div className='flex justify-evenly w-[450px]'>
+          <div className='flex xl:flex-row sm:flex-col justify-evenly w-[450px]'>
             {/* incress or degress btn with buy  & like btn */}
-           <div className='flex text-center gap-7 mt-7 w-170 h-8  bg-slate-400 rounded-full'>
-              <button className='text-[18px]  font-thin outline outline-1 rounded-sm bg-slate-400 text-center rounded-s-full w-[32px] h-[32px] '> - </button> 
+           <div className='flex text-center gap-7 mt-7 xl:w-170 sm:w-[100px] h-8   
+            bg-slate-400 rounded-full'>
+              <button className='text-[18px] font-thin outline outline-1 rounded-sm bg-slate-400 text-center rounded-s-full w-[32px] h-[32px] '> - </button> 
               <span className=' bg-slate-400 text-black'>1</span> <button className='text-[18px]  font-thin rounded-sm outline outline-1 outline-black text-center w-[32px] h-[32px] bg-gray-400 text-black rounded-e-full'> + </button>
             </div>
             {/* Add to the cart button */}
-            <button className='outline oultine-1 bg-black text-white mt-[28px] w-[360px] ml-5 mb-8 rounded-full 
+            <button className='outline oultine-1 bg-black text-white 
+              xl:mt-[28px] xl:w-[360px] sm:w-[126px] xl:ml-5 sm:-ml-3 mb-8 rounded-full 
 h-[40px]'>Add To The Cart</button>          </div>
 
 </div>
 </div>
-<div className=' flex justify-evenly text-gray-400 '>
+<div className=' flex xl:flex-row sm:flex-col sm:ml-6 justify-evenly text-gray-400 '>
 <Link href="/"  className='hover:text-black hover:underline'> Product Detial</Link>
 <Link href="/" className='hover:text-black hover:underline'> Rating & Reviews</Link>
 <Link href="/" className='hover:text-black hover:underline'> FAQs</Link>
@@ -126,33 +131,40 @@ h-[40px]'>Add To The Cart</button>          </div>
 {/* All review */}
 <div>
 <div className='font-bold flex flex-row px-6 py-6'> All Reviews <p className='text-[14px]'>(451)</p> </div>
-<div className=' flex flex-row gap-5 ml-[55em]'>
+<div className=' flex xl:flex-row sm:flex-col gap-5 sm:gap-2 xl:ml-[55em] xl:-mt-20 sm:ml-4'>
   <button className='rounded-full bg-gray-300 w-[50px] h-[50px]'> <Image src="/prod/b1.png" alt=" b1" width={25} height={25} className='ml-3'/></button>
 <button className='rounded-full bg-gray-300 w-[90px] h-[50px]'><select className='bg-gray-300 outline-none'> <option> Latest </option><Image src="/prod/drop down.png" alt=" dropdown" width={5} height={5} /></select> </button>
-<button className='outline oultine-1 bg-black text-white mt-[5px] w-[120px] ml-5 mb-8  rounded-full 
+<button className='outline oultine-1 bg-black text-white mt-[5px] w-[120px] xl:ml-5 xl:mb-8  sm:-ml-3 rounded-full 
 h-[40px]'>Write a Reiew</button> 
  </div>
 </div>
 </div>
-<div className='grid grid-cols-2 w-45  ml-30 py-8 gap-2'>
-<Image src="/prod/c1.png" alt="comment1" width={410} height={241} className='ml-28 '/>
-<Image src="/prod/c2.png" alt="comment2" width={410} height={241} className=' '/>
-<Image src="/prod/c3.png" alt="comment3" width={410} height={241} className='ml-28'/>
-<Image src="/prod/c4.png" alt="comment4" width={410} height={241} className=''/>
-<Image src="/prod/c5.png" alt="comment5" width={410} height={241} className='ml-28'/>
-<Image src="/prod/c6.png" alt="comment6" width={410} height={241} className=''/>
+<div className='xl:grid xl:grid-cols-2  sm:flex sm:flex-col w-45  xl:ml-30 py-8 gap-2'>
+<Image src="/prod/c1.png" alt="comment1" width={410} height={241} 
+className='xl:ml-28 sm:ml-0 '/>
+<Image src="/prod/c2.png" alt="comment2" width={410} height={241} 
+ className=' '/>
+<Image src="/prod/c3.png" alt="comment3" width={410} height={241} 
+className='xl:ml-28 sm:ml-0'/>
+<Image src="/prod/c4.png" alt="comment4" width={410} height={241} 
+className=''/>
+<Image src="/prod/c5.png" alt="comment5" width={410} height={241} 
+className='xl:ml-28 sm:ml-0'/>
+<Image src="/prod/c6.png" alt="comment6" width={410} height={241} 
+className=''/>
 </div>
 <div className='px-[32em]'>
-<button className='outline outline-[0.4px] bg-white text-black mt-[5px] w-[150px]  mb-8  rounded-full 
-h-[40px]'>Load More Reiew</button>
+<button className='outline outline-[0.4px] bg-white text-black 
+mt-[5px] w-[150px]  mb-8  rounded-full 
+h-[40px] xl:ml-0 sm:-ml-[400px]'>Load More Reiew</button>
 </div>
 
 {/* last section */}
-<h1 className='text-5xl font-extrabold text-center mb-9'>You Might Also Like</h1>
+<h1 className='xl:text-5xl sm:text-[20px] font-extrabold xl:text-center sm:text-left sm:ml-5 mb-9 '>You Might Also Like</h1>
 
-<div className=' flex flex-row justify-evenly'> 
+<div className=' flex xl:flex-row sm:flex-col sm:ml-4 justify-evenly'> 
 {/* card1 */}
-<div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px]'>
+<div className='flex flex-col flex-start p-0 gap-[16px]  w-[270px] xl:h-[650px] sm:h-[490px] '>
            <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
              <Image src="/prod/shirt1.png" alt="shirt1" width={180} height={180} 
              className=' position-absolute w-[190px] h-[180px] -mt-10'/>
@@ -174,7 +186,7 @@ h-[40px]'>Load More Reiew</button>
 </div>
 {/* card 2 */}
 
-<div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px] '>
+<div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] xl:h-[650px] sm:h-[490px] '>
             
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/prod/shirt2.png" alt="shirt2" width={180} height={180} 
@@ -191,7 +203,7 @@ h-[40px]'>Load More Reiew</button>
 
 {/* card 3 */}
           
-           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] h-[650px]'>
+           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] xl:h-[650px] sm:h-[490px]'>
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/prod/shirt3.png" alt="shirt3" width={180} height={180} 
               className=' position-absolute w-[190px] h-[180px] -mt-10'/>
@@ -206,7 +218,7 @@ h-[40px]'>Load More Reiew</button>
           
 {/* card 4 */}
 
-<div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] h-[650px] '>
+<div className=' flex flex-col flex-start p-0 gap-[16px]  w-[270px] xl:h-[650px] sm:h-[490px] '>
             
             <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
               <Image src="/prod/shirt4.png" alt="Vertical Striped Shirt" width={180} height={180} 
