@@ -4,9 +4,8 @@ import Link from 'next/link'
 
  const category = () => {
   return (
+    <div>    <div className='flex'><Link href="/" >Home</Link> <Link href="/cart" >Cart</Link></div>
     <div className='xl:w-screen xl:h-full xl:grid xl:grid-cols-3 '>
-    <Link href="/" >Home</Link> <Link href="/cart" >Cart</Link>
-    
       <div className=' xl:w-[290px] sm:w-[290px] xl:h-[1030px] outline outline-1 xl:ml-10 sm:ml-2  mb-6 mt-16
 '>  {/* fillter */}
 <div className=' w-15 h-4 flex flex-row justify-between'> <h1 className='font-bold mt-2'>Filters</h1> 
@@ -252,6 +251,7 @@ h-[40px]'>Apply Filter</button>          </div>
 
 </div>
 
+</div>
 
 
   )
