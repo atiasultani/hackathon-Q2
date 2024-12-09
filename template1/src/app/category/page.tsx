@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
  const category = () => {
   return (
     <div className='xl:w-screen xl:h-full xl:grid xl:grid-cols-3 '>
-
-
+    <p>  <Link href="/">Home</Link> <p> {">"} </p> <Link href="/cart">Cart</Link>
+    </p>
 
       <div className=' xl:w-[290px] sm:w-[290px] xl:h-[1030px] outline outline-1 xl:ml-10 sm:ml-2  mb-6 mt-16
 '>  {/* fillter */}
