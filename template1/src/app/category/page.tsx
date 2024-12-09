@@ -185,7 +185,7 @@ h-[40px]'>Apply Filter</button>          </div>
            
             {/* div3 */}
 <div>                          
-<div className='flex xl:flex-row sm:flex-col  gap-4 sm:ml-3'>
+<div className='flex xl:flex-row sm:flex-col  gap-4 sm:ml-3 xl:w-44'>
              {/* card 1 */}
 
           
@@ -209,7 +209,7 @@ h-[40px]'>Apply Filter</button>          </div>
          
           {/* card2 */}
          
-           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] xl:h-[650px] sm:h-[450px]'>
+           <div className='flex flex-col flex-start p-0 gap-[16px] xl:w-[270px] xl:h-[650px] sm:h-[450px] xl:px-16'>
            <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
              <Image src="/home/p6.png" alt="graphic T-shirt" width={180} height={180} 
              className=' position-absolute w-[190px] h-[180px] -mt-10'/>
@@ -222,11 +222,12 @@ h-[40px]'>Apply Filter</button>          </div>
            <p className='text-2xl ml-11'>$180 </p>
 
              </div>
-             <div className=' flex flex-row justify-evenly '>
+             <div className=' flex flex-row  justify-evenly '>
           
           {/* card3 */}
          
-           <div className='flex flex-col flex-start p-0 gap-[16px] w-[270px] xl:h-[650px] sm:h-[450px] xl:mr-10 sm:-ml-80'>
+           <div className='flex flex-col flex-start p-0 gap-[16px] xl:w-[270px] xl:h-[650px] sm:h-[450px] 
+                          xl:ml-40    sm:-ml-80'>
            <div className='w-[270px] h-[250px] px-10 py-20 outline-sm bg-gray-500 bg-opacity-[0.12] rounded-lg '>
              <Image src="/home/p7.png" alt="Loos Fit Bermuda Short" width={180} height={180} 
              className=' position-absolute w-[190px] h-[180px] -mt-10'/>
