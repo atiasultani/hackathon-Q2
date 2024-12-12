@@ -54,6 +54,13 @@ xl:mt-20  sm:mt-18 sm:ml-12'>
 
         {/* text details */}
         <div className='xl:w-80 xl:h-80  xl:mt-20  sm:w-40 sm:ml-8'>
+
+
+        <Link href="productdetail/product" className='font-bold text-[20px]' >Dynamic Routs One Life Graphic T-shirt </Link>
+
+<br/>
+<br/>
+
           <h1 className='font-bold text-[20px]'>One Life Graphic T-shirt</h1>
           <div className='flex flex-row'> <Image src="/home/Four Half Star.png" alt='4 H star' width={100} height={100} />
             <span>4.5/5</span> 
@@ -209,7 +216,7 @@ h-[40px] xl:ml-0 sm:-ml-[400px]'>Load More Reiew</button>
               className=' position-absolute w-[190px] h-[180px] -mt-10'/>
              </div>
              
-            <h1 className='font-bold text-center'>Polo with Tipping Details</h1>
+            <h1  className='font-bold text-center'>Polo with Tipping Details</h1>
            
              <p className='flex flex-row gap-2 px-10'> <Image src="/home/Four Half Star.png" alt='4half star' width={100} height={50} /> 4.5/5</p>
             <p className='text-2xl ml-11'>$180 </p>
