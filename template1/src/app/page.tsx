@@ -4,7 +4,7 @@ import Image from 'next/image'
 const home = () => {
   return (
 
-<div>
+<div className="max-w-screen-sm:screen max-w-screen-md:screen max-w-screen-lg:screen max-w-screen-xl:screen ">
 
       {/* hero section */}
         <div className='xl:w-screen h-auto lg:w-auto sm:w-[400px]   lg:h-auto items-center px-2 '>
